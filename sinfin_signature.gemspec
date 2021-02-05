@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name          = 'sinfin-signature'
+  spec.name          = 'sinfin_signature'
   spec.version       = '0.1.0'
   spec.authors       = ['Sinfin']
   spec.email         = ['info@sinfin.cz']
 
   spec.summary       = 'Write a short summary, because RubyGems requires one.'
   spec.description   = 'Write a longer description or delete this line.'
-  spec.homepage      = 'https://github.com/sinfin/sinfin-signature/'
+  spec.homepage      = 'https://github.com/sinfin/sinfin_signature/'
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files

@@ -1,0 +1,61 @@
+$sinfin-signature-padding: 5px !default
+
+$sinfin-signature-bottom: $grid-gutter-width / 2 - $sinfin-signature-padding !default
+$sinfin-signature-right: $grid-gutter-width / 2 - $sinfin-signature-padding !default
+$sinfin-signature-zindex: $zindex-fixed - 1 !default
+$sinfin-signature-font-family: $font-family-monospace !default
+
+$sinfin-signature-font-size: 10px !default
+$sinfin-signature-line-height: 1 !default
+
+$sinfin-signature-width: 120px !default
+
+$sinfin-signature-color: inherit !default
+$sinfin-signature-hover-color: $sinfin-signature-color !default
+
+$sinfin-signature-text-decoration: none !default
+
+.sinfin-signature
+  color: $sinfin-signature-color
+  position: absolute
+  left: auto
+  top: auto
+  right: $sinfin-signature-right
+  bottom: $sinfin-signature-bottom
+  z-index: $sinfin-signature-zindex
+  font-family: $sinfin-signature-font-family
+  font-size: $sinfin-signature-font-size
+  line-height: $sinfin-signature-line-height
+  padding: $sinfin-signature-padding
+  text-decoration: $sinfin-signature-text-decoration !important
+
+  &__inner
+    overflow: hidden
+    white-space: nowrap
+    text-align: center
+    transition: .15s all
+    max-width: 0
+    display: inline-flex
+
+    &:before, &:after
+      content: '*'
+      display: block
+      flex: 0 0 auto
+
+    &:before
+      margin-right: auto
+      padding-right: 8px
+
+    &:after
+      margin-left: auto
+      padding-left: 8px
+
+  &:before, &:after
+    content: '/'
+    display: inline
+
+  &:hover
+    color: $sinfin-signature-hover-color
+
+  &:hover &__inner
+    max-width: $sinfin-signature-width

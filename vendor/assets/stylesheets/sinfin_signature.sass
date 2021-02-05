@@ -4,11 +4,14 @@ $sinfin-signature-bottom: $grid-gutter-width / 2 - $sinfin-signature-padding !de
 $sinfin-signature-right: $grid-gutter-width / 2 - $sinfin-signature-padding !default
 $sinfin-signature-zindex: $zindex-fixed - 1 !default
 $sinfin-signature-font-family: $font-family-monospace !default
+$sinfin-signature-font-weight: $font-weight-normal !default
 
 $sinfin-signature-font-size: 10px !default
 $sinfin-signature-line-height: 1 !default
 
 $sinfin-signature-width: 120px !default
+
+$sinfin-signature-position: fixed !default
 
 $sinfin-signature-color: inherit !default
 $sinfin-signature-hover-color: $sinfin-signature-color !default
@@ -17,13 +20,14 @@ $sinfin-signature-text-decoration: none !default
 
 .sinfin-signature
   color: $sinfin-signature-color
-  position: absolute
+  position: $sinfin-signature-position
   left: auto
   top: auto
   right: $sinfin-signature-right
   bottom: $sinfin-signature-bottom
   z-index: $sinfin-signature-zindex
   font-family: $sinfin-signature-font-family
+  font-weight: $sinfin-signature-font-weight
   font-size: $sinfin-signature-font-size
   line-height: $sinfin-signature-line-height
   padding: $sinfin-signature-padding

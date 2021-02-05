@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    sinfin-signature (0.1.0)
+    sinfin_signature (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -120,7 +120,7 @@ DEPENDENCIES
   rake (~> 10.0)
   rubocop (= 0.66.0)
   rubocop-rails_config
-  sinfin-signature!
+  sinfin_signature!
 
 BUNDLED WITH
    2.1.4

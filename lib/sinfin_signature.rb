@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
-require 'sinfin-signature/version'
-require 'sinfin-signature/helper'
+require 'sinfin_signature/helper'
 
 module SinfinSignature
   module Rails

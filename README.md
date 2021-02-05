@@ -3,14 +3,14 @@
 Add to Gemfile
 
 ```
-gem 'sinfin-signature', git: 'git@github.com:sinfin/sinfin-signature.git'
+gem 'sinfin_signature', git: 'git@github.com:sinfin/sinfin_signature.git'
 ```
 
 Add to `application.sass` somewhere after `custom_bootstrap` import
 
 ```
 @import 'custom_bootstrap'
-@import 'sinfin-signature'
+@import 'sinfin_signature'
 ```
 
-Use the `sinfin-signature` helper. If using inside a cell, you have to `include SinfinSignature::Helper`.
+Use the `sinfin_signature` helper. If using inside a cell, you have to `include SinfinSignature::Helper`.

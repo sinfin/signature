@@ -1,8 +1,13 @@
 # frozen_string_literal: true
 
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+
+require 'sinfin_signature/version'
+
 Gem::Specification.new do |spec|
   spec.name          = 'sinfin_signature'
-  spec.version       = '0.1.0'
+  spec.version       = SinfinSignature::Version::VERSION
   spec.authors       = ['Sinfin']
   spec.email         = ['info@sinfin.cz']
 
@@ -21,9 +26,6 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
+  spec.add_dependency 'rails'
   spec.add_development_dependency 'bundler', '~> 2.0'
-  spec.add_development_dependency 'guard-rubocop'
-  spec.add_development_dependency 'rubocop', '0.66.0'
-  spec.add_development_dependency 'rake', '~> 10.0'
-  spec.add_development_dependency 'rubocop-rails_config'
 end
